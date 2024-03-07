@@ -1,4 +1,4 @@
-### Container nedir?
+### Container nedir?
 
 Kendilerine ait process services ve networkleri olan aynı işletim sistemi (ya da VM) üzerinde olup birbirinden izole çalışan ortamlardır.
 VM ye çok benziyor lakin vm tamamen izole edilmiş sistemlerken
