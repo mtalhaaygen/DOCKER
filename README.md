@@ -51,7 +51,8 @@ Pc ne Docker yüklediğinde bu uugulamayaca docker host yada docker engine denil
  
 ### Docker Ne işe yarıyor?
 
-![docker](dockerneis.png)
+![dockerneis](https://github.com/mtalhaaygen/DOCKER/assets/63591196/7fc3c666-0c80-4d95-bbb1-bafaee9c88cc)
+
 
 indirilen her bir image in uniq bir id si olur.
 Dockerfile kullanarak imaj oluşturulmaktadır. Tek bir imaj dosyasıyla birçok container oluşturabiliriz, Containerların oluşturulması yada
@@ -60,7 +61,7 @@ silinmesi imaj dosyasını etkilememektedir.
 İmajlar katmanlardan oluşmaktadır. Bir pyton container
 çalıştırdığımızda bir işletim systemin calışacağı için 1. Katmanı os, 2.Katmanı pyton uygulaması olarak nitelendirilir. Bunların bütünede
 imaj deriz.
-![docker](imagelayer.png)
+![imagelayer](https://github.com/mtalhaaygen/DOCKER/assets/63591196/c408951d-3984-4518-9436-051ee5b3515e)
 
 ### Docker Komutlar
 
@@ -119,8 +120,7 @@ aşağıdaki gibi,
 5. Oluşturduğun docker imajını push et
 6. Docker.hub namespace olarak domainin search et altındaki imajları görüntüle
 
-![docker](hubpush.png)
-görsel hubpush
+![hubpush](https://github.com/mtalhaaygen/DOCKER/assets/63591196/2a953107-95db-4b90-ae31-bf0621eba9fc)
 
 ### Docker Network
 
@@ -153,14 +153,15 @@ Bunu yapmak için;
 - Böylece container içerisinde bir veri yazıldığında, Docker engine bunu alır bizim mapping yaptığımız klasörün içerisine aktarır.
 - Daha sonrasında container durdurulduğunda bilgiler Docker Host üzerinde kalmaya devam eder.
 
-![alt text](volumemapping.png)
+![volumemapping](https://github.com/mtalhaaygen/DOCKER/assets/63591196/dc34e429-4d19-4827-a53e-7526eaf910d8)
+
 `docker run -v /opt/data:/data/db mongo` 
 **_(burada /opt/data hedef artık burada kayıt edilecek, /data/db ise container içerisinde bulunan kaynak klasör)_**
 
 ### Docker'ı Environment Variable ile başlatmak
 
 Bazı containerları ayağa kaldırırken environment variable vermek zorunda kalabiliriz
-![alt text](environmentRequest.png)
+![environmentRequest](https://github.com/mtalhaaygen/DOCKER/assets/63591196/fc66e900-fe12-4b75-a922-bc642851c22b)
 
 görselde görüldüğü gibi mysql için üç environment variabledan biri mutlaka belirtilmek zorunda
 ```
