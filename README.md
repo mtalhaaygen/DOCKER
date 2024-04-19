@@ -368,7 +368,8 @@ Tüm container birbirileriyle ve internet ile erişimi
 bulunmaktadır.
 
 
-![[image.png]]
+![image](https://github.com/mtalhaaygen/DOCKER/assets/63591196/6c7552fa-28aa-42b4-958f-cbd11b3d05d7)
+
   
 Default olarak docker ile gelen 3 network driver modeli
 
@@ -400,12 +401,12 @@ gibi oluşturulur.
 
 `docker network ls` ile var olan network türlerini görebiliriz.
 
-  ![[image2.png]]
+![image2](https://github.com/mtalhaaygen/DOCKER/assets/63591196/65554812-6178-46f7-ac78-68220bc6c416)
 
 
 Aynı network üzerindeki containerlar birbirine bağlamak
 
-![[image3.png]]
+![image3](https://github.com/mtalhaaygen/DOCKER/assets/63591196/ab863844-14b6-4e53-a311-58ca133c1cdb)
 
   
   
