@@ -1,13 +1,13 @@
 all:
-	@mkdir -p $(HOME)/maygen/data/wordpress
-	@mkdir -p $(HOME)/maygen/data/mariadb
-	@docker-compose -f ./srcs/docker-compose.yml up
+	@mkdir -p $(HOME)/data/wordpress
+	@mkdir -p $(HOME)/data/mariadb
+	@docker compose -f ./srcs/docker-compose.yml up
 
 down:
-	@docker-compose -f ./srcs/docker-compose.yml down
+	@docker compose -f ./srcs/docker-compose.yml down
 
 re:
-	@docker-compose -f srcs/docker-compose.yml up --build
+	@docker compose -f srcs/docker-compose.yml up --build
 
 clean:
 	@docker stop $$(docker ps -qa);\
@@ -15,7 +15,7 @@ clean:
 	docker rmi -f $$(docker images -qa);\
 	docker volume rm $$(docker volume ls -q);\
 	docker network rm $$(docker network ls -q);\
-	rm -rf $(HOME)/maygen/data/wordpress
-	rm -rf $(HOME)/maygen/data/mariadb
+	rm -rf $(HOME)/data/wordpress
+	rm -rf $(HOME)/data/mariadb
 
 .PHONY: all re down clean
